@@ -117,7 +117,7 @@ mkfs: mkfs.c fs.h
 .PRECIOUS: %.o
 
 UPROGS= \
-	_hello _cat _echo _forktest _grep _init _kill _ln _ls _mkdir \
+	_hello _ptrace _cat _echo _forktest _grep _init _kill _ln _ls _mkdir \
 	_rm _sh _stressfs _usertests _wc _zombie \
 #
 
