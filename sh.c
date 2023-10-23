@@ -161,7 +161,7 @@ main(void)
       // Run the ptrace command here
       printf(2, "here");
       if (fork1() == 0)
-        exec("ptrace", 0);
+        //exec("ptrace", 0);
       wait();
     }
     if(buf[0] == 'c' && buf[1] == 'd' && buf[2] == ' '){
