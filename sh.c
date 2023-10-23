@@ -159,6 +159,7 @@ main(void)
   while(getcmd(buf, sizeof(buf)) >= 0){
     if (strcmp(buf, "ptrace\n") == 0) {
       // Run the ptrace command here
+      printf(2, "here");
       if (fork1() == 0)
         exec("ptrace", 0);
       wait();

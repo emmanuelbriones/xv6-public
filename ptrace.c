@@ -68,14 +68,14 @@ int call_to_mask(const char *syscall_name) {
     return mask;
 }
 
-// int main(int argc, char *argv[])
-// {
-//     const char *syscall_name = argv[1];
-//     int mask = call_to_mask(syscall_name);
+int main(int argc, char *argv[])
+{
+    const char *syscall_name = argv[1];
+    int mask = call_to_mask(syscall_name);
 
-//     int test = ptrace(mask);
+    int test = ptrace(mask);
 
-//     printf(2, "Test: %d\n", test);
+    printf(2, "Test: %d\n", test);
 
-//     exit();
-// }
+    exit();
+}
