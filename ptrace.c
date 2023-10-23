@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 
     int test = ptrace(mask);
 
-    printf(2, "Test: %d\n", test);
+    cprintf("Test: %d\n", test);
 
     exit();
 }
