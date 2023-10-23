@@ -1,8 +1,9 @@
 #include "types.h"
 #include "user.h"
 #include "syscall.h"
+#include "ptrace.h"
 
-int sys_ptrace(int mask) {
+int ptrace(int mask) {
     if (mask == 0){
         printf(2, "ptrace failed\n");
         return 0;
@@ -74,7 +75,7 @@ int main(int argc, char *argv[])
     const char *syscall_name = argv[1];
     int mask = call_to_mask(syscall_name);
 
-    int test = sys_ptrace(mask);
+    int test = ptrace(mask);
 
     printf(2, "Test: %d\n", test);
 
