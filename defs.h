@@ -120,7 +120,7 @@ void            wakeup(void*);
 void            yield(void);
 
 // ptrace.c
-// int             ptrace(int);
+int             ptrace(int);
 
 // swtch.S
 void            swtch(struct context**, struct context*);
