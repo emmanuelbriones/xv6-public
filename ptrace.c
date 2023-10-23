@@ -61,8 +61,6 @@ int call_to_mask(const char *syscall_name) {
         mask = SYS_mkdir;
     }else if (strcmp(syscall_name, "close") == 0) {
         mask = SYS_close;
-    }else if (strcmp(syscall_name, "ptrace") == 0) {
-        mask = SYS_ptrace;
     }else{
          printf(2, "Sys call does not exist\n");
     }
